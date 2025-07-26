@@ -47,23 +47,23 @@ Dimensionality reduction helps us inspect variance structure and clustering by t
 
 2D PCA
 {% include image-gallery.html images="mm_2d_pca.png" height="400" %} 
-<span style="font-size: 20px">2D PCA of team performance features</span>
+<span style="font-size: 12px">2D PCA of team performance features</span>
 
 3D PCA
 {% include image-gallery.html images="mm_3d_pca.png" height="400" %} 
-<span style="font-size: 20px">3D PCA of team performance features</span>
+<span style="font-size: 12px">3D PCA of team performance features</span>
 
 ## 🌟 Top 10 Feature Importances (Random Forest)
 We trained a Random Forest classifier and extracted the top 10 most influential features.
 
 {% include image-gallery.html images="mm_feature_importance.png" height="400" %} 
-<span style="font-size: 20px">Random Forest top 10 feature importances</span>
+<span style="font-size: 12px">Random Forest top 10 feature importances</span>
 
 ## 🏀 Predicted Win Probabilities
 Finally, we generate predicted probabilities for each team in the hold-out tournament bracket.
 
 {% include image-gallery.html images="mm_pred.png" height="800" %} 
-<span style="font-size: 20px">Predicted win probability for each team</span>
+<span style="font-size: 12px">Predicted win probability for each team</span>
 
 ## 📈 Performance Summary
 
