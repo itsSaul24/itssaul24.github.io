@@ -23,7 +23,7 @@ profile_image: ./assets/images/profile-image/SaulMeans_Headshot.jpg
 
 # Link your resume
 # You can place your resume in assets/resume/{resume file.pdf} or add external link such as pdf saved in google drive 
-resume-url: ./assets/resume/ErickSaulMeans_Resume.pdf
+resume-url: /assets/resume/ErickSaulMeans_Resume.pdf
 
 
 # Set up external links - this will show up as small icons next to your name.
