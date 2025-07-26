@@ -15,7 +15,7 @@ skills:
   - Classification Modeling
   - Model Evaluation & Selection
   - Data Visualization
-main-image: /mm_cover.png
+main-image: /mm_cover.jpg
 ---
 
 ## 📖 Introduction
@@ -28,8 +28,7 @@ We walk through data preprocessing, dimensionality reduction, model training, an
 
 ```text
 marchmadness-prediction/
-├── data/           # CSVs for training, validation, final predictions & 
-raw misc
+├── data/           # CSVs for training, validation, final predictions & raw misc
 ├── notebooks/      # Jupyter notebooks with analysis & code
 ├── reports/        # Final PDF reports: evaluation & modeling
 └── slides/         # Presentation decks
@@ -60,10 +59,9 @@ We trained a Random Forest classifier and extracted the top 10 most influential 
 <span style="font-size: 10px">Random Forest top 10 feature importances</span>
 
 ## 🏀 Predicted Win Probabilities
-Finally, we generate predicted probabilities for each team in the hold-out 
-tournament bracket.
+Finally, we generate predicted probabilities for each team in the hold-out tournament bracket.
 
-{% include image-gallery.html images="mm_pred.png" height="400" %} 
+{% include image-gallery.html images="mm_pred.png" height="800" %} 
 <span style="font-size: 10px">Predicted win probability for each team</span>
 
 ## 📈 Performance Summary
@@ -76,6 +74,7 @@ Across both the initial and fine‑tuned parameter sets, Logistic Regression con
 | SVM                     | 0.4615           | 0.5385         |
 | KNN                     | 0.4300           | 0.4839         |
 | Random Forest           | 0.4146           | 0.4390         |  
+
 *(Weighted macro‑average across accuracy, precision, recall, F1)* 
 
 ---
