@@ -12,7 +12,7 @@ title: Saul's Portfolio # This is what shows up in the tab of the browser
 
 
 # Hero Section
-name: Saul M.
+name: Saul Means
 headline: New York, NY
 description: >- # dont remove this line. this will ignore all new lines until the next section
   Hello! I'm a driven individual who's passionate about tackling many types of data challenges across the entire data stack. Currently building AI agents at Bank of New York while getting my Master's in Computer Science at Georgia Tech. 
@@ -23,7 +23,7 @@ profile_image: ./assets/images/profile-image/SaulMeans_Headshot.jpg
 
 # Link your resume
 # You can place your resume in assets/resume/{resume file.pdf} or add external link such as pdf saved in google drive 
-resume-url:
+resume-url: ./assets/resume/ErickSaulMeans_Resume.pdf
 
 
 # Set up external links - this will show up as small icons next to your name.
