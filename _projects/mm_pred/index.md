@@ -22,6 +22,7 @@ main-image: /mm_cover.jpg
 
 In this project, we explore historical NCAA data to predict Purdue’s 2024 Tournament performance.  
 We walk through data preprocessing, dimensionality reduction, model training, and final probability outputs.
+
 ---
 
 ## 📂 Project Structure
@@ -46,23 +47,23 @@ Dimensionality reduction helps us inspect variance structure and clustering by t
 
 2D PCA
 {% include image-gallery.html images="mm_2d_pca.png" height="400" %} 
-<span style="font-size: 10px">2D PCA of team performance features</span>
+<span style="font-size: 20px">2D PCA of team performance features</span>
 
 3D PCA
 {% include image-gallery.html images="mm_3d_pca.png" height="400" %} 
-<span style="font-size: 10px">3D PCA of team performance features</span>
+<span style="font-size: 20px">3D PCA of team performance features</span>
 
 ## 🌟 Top 10 Feature Importances (Random Forest)
 We trained a Random Forest classifier and extracted the top 10 most influential features.
 
 {% include image-gallery.html images="mm_feature_importance.png" height="400" %} 
-<span style="font-size: 10px">Random Forest top 10 feature importances</span>
+<span style="font-size: 20px">Random Forest top 10 feature importances</span>
 
 ## 🏀 Predicted Win Probabilities
 Finally, we generate predicted probabilities for each team in the hold-out tournament bracket.
 
 {% include image-gallery.html images="mm_pred.png" height="800" %} 
-<span style="font-size: 10px">Predicted win probability for each team</span>
+<span style="font-size: 20px">Predicted win probability for each team</span>
 
 ## 📈 Performance Summary
 
@@ -112,3 +113,10 @@ Across both the initial and fine‑tuned parameter sets, Logistic Regression con
 - **Probability Calibration:** Apply Platt scaling or isotonic regression to improve alignment between predicted probabilities and observed frequencies.  
 - **Game‑by‑Game Modeling:** Explore a sequential model that predicts each matchup individually—potentially boosting overall tournament‑level accuracy.  
 - **Live Updating:** Integrate in‑season and in‑tournament feeds (injuries, momentum metrics) to dynamically adjust win probabilities round‑by‑round.
+
+## 🔗 GitHub
+
+You can explore the source code here:  
+👉 [View on GitHub](https://github.com/itsSaul24/marchmadness-prediction)
+
+---

@@ -13,12 +13,15 @@ title: Saul's Portfolio # This is what shows up in the tab of the browser
 
 # Hero Section
 name: Saul Means
-headline: New York, NY
-description: >- # dont remove this line. this will ignore all new lines until the next section
-  Hello! I'm a driven individual who's passionate about tackling many types of data challenges across the entire data stack. Currently building AI agents at Bank of New York while getting my Master's in Computer Science at Georgia Tech. 
+headline: New York, New York
+description: | # dont remove this line. this will ignore all new lines until the next section
+  I'm a Data Science Analyst at BNY, currently in a rotational program. I studied Data Science at Purdue University and am pursuing a Master's in Computer Science at Georgia Tech.
+  I am very passionate about my work and I love tackling data challenges across the entire data stack.
+
+  When I'm not debugging my past mistakes, you'll probably find me running through NYC or spending time with my family and friends.  
 
 # Place your profile image in /assets/images/profile-image/folder and edit the file name
-profile_image: ./assets/images/profile-image/SaulMeans_Headshot.jpg
+profile_image: ./assets/images/profile-image/saul_pp.png
 
 
 # Link your resume
