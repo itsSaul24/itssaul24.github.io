@@ -29,7 +29,7 @@ This project is currently under development. Once complete, it will showcase:
 ## 📊 Architecture Overview (Preview)
 
 The pipeline will follow this general flow:
-```
+```text
          ┌────────────┐
          │ Financial  │
          │   APIs     │
