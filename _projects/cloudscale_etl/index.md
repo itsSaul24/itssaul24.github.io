@@ -29,7 +29,7 @@ This project is currently under development. Once complete, it will showcase:
 ## 📊 Architecture Overview (Preview)
 
 The pipeline will follow this general flow:
-'''
+```
          ┌────────────┐
          │ Financial  │
          │   APIs     │
@@ -59,7 +59,7 @@ The pipeline will follow this general flow:
    │ Data Studio /│
    │ Looker / BI  │
    └──────────────┘
-'''
+```
 
 
 Both development and production architectures will be containerized and cloud-integrated for scalability and cost-effectiveness.
