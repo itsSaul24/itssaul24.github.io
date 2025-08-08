@@ -13,20 +13,23 @@
 
     <link rel="stylesheet" href="/css/styles.css">
     <link rel="stylesheet" href="/css/syntax.css">
+    <link rel="icon" type="image/png" href="/assets/images/favicon.png">
 
-    <script src="/assets/js/script.js"></script>
+    <meta name="description" content="I work at BNY as a Data Science Analyst in their rotational program. I graduated with a Data Science degree from Purdue University and I'm currently pursuing my Master's in Computer Science at Georgia Tech.I'm passionate about solving data challenges across the full stack. When I'm not working through code (or fixing my own bugs), you can find me running around NYC or hanging out with family and friends.">
+    <meta property="og:title" content="Saul's Portfolio">
+    <meta property="og:description" content="I work at BNY as a Data Science Analyst in their rotational program. I graduated with a Data Science degree from Purdue University and I'm currently pursuing my Master's in Computer Science at Georgia Tech.I'm passionate about solving data challenges across the full stack. When I'm not working through code (or fixing my own bugs), you can find me running around NYC or hanging out with family and friends.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="http://localhost:4000/404.html">
+    <meta property="og:image" content="/assets/images/profile-image/saul_pp.png">
 
-    
-    <title>John Doe's Portfolio</title>
-    
-
+    <title>Saul's Portfolio</title>
 </head>
 <body>
     <!-- NAVBAR -->
      <!-- _includes/nav.html -->
 <nav>
     <div class="left">
-        <a href="/">John Doe</a>
+        <a href="/">Saul Means</a>
     </div>
 
     <!-- Desktop Menu -->
@@ -37,25 +40,25 @@
         <a href="/projects/">
             <span>Projects</span>
         </a>
-        <a href="https://drive.google.com/file/d/13Z3duVzh-gguPU5r03oJVEE6rV9rd3DS/view?usp=sharing" target="_blank" rel="noopener noreferrer">
+        <a href="/assets/resume/ErickSaulMeans_Resume.pdf" target="_blank" rel="noopener noreferrer">
             <span>Resume</span>
         </a>
     </div>
 
     <!-- Mobile Menu Button -->
-    <button class="menu-toggle" aria-label="Toggle menu">
+    <button class="menu-toggle" type="button" aria-label="Toggle menu" aria-expanded="false" aria-controls="mobile-nav">
         <i class="fa fa-bars fa-2x"></i>
     </button>
 
     <!-- Mobile Menu -->
-    <div class="mobile-nav">
+    <div class="mobile-nav" id="mobile-nav">
         <a href="/">
             <span>Home</span>
         </a>
         <a href="/projects/">
             <span>Projects</span>
         </a>
-        <a href="https://drive.google.com/file/d/13Z3duVzh-gguPU5r03oJVEE6rV9rd3DS/view?usp=sharing" target="_blank" rel="noopener noreferrer">
+        <a href="/assets/resume/ErickSaulMeans_Resume.pdf" target="_blank" rel="noopener noreferrer">
             <span>Resume</span>
         </a>
     </div>
@@ -90,10 +93,7 @@
 </div>
 </div>
 
-     
-</body>
-
-    <footer>
+     <footer>
     <div class="footer-content">
         <div class="links">
             <a href="/">
@@ -102,14 +102,17 @@
             <a href="/projects/">
                 <span>Projects</span>
             </a>
-            <a href=https://drive.google.com/file/d/13Z3duVzh-gguPU5r03oJVEE6rV9rd3DS/view?usp=sharing target="_blank" rel="noopener noreferrer">
+            <a href="/assets/resume/ErickSaulMeans_Resume.pdf" target="_blank" rel="noopener noreferrer">
                 <span>Resume</span>
             </a>
         </div>
     </div>
     <div class="license">
-        <span>For any question or suggestion for the portfolio template or projects, reach out <a class="help" href="https://createdotshow.com"> Here</a> </span>
-        <p>FreeToEngineer portfolio template © 2025 by Aram Lee is licensed under <a href="https://creativecommons.org/licenses/by/4.0/?ref=chooser-v1">CC BY 4.0</a></p>
+        <p>FreeToEngineer portfolio template 2025 by Aram Lee is licensed under <a href="https://creativecommons.org/licenses/by/4.0/?ref=chooser-v1">CC BY 4.0</a></p>
     </div>
 </footer>
+
+
+     <script defer src="/assets/js/script.js"></script>
+</body>
 </html>

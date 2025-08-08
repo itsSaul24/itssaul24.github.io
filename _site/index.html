@@ -13,20 +13,23 @@
 
     <link rel="stylesheet" href="/css/styles.css">
     <link rel="stylesheet" href="/css/syntax.css">
+    <link rel="icon" type="image/png" href="/assets/images/favicon.png">
 
-    <script src="/assets/js/script.js"></script>
+    <meta name="description" content="I work at BNY as a Data Science Analyst in their rotational program. I graduated with a Data Science degree from Purdue University and I'm currently pursuing my Master's in Computer Science at Georgia Tech.I'm passionate about solving data challenges across the full stack. When I'm not working through code (or fixing my own bugs), you can find me running around NYC or hanging out with family and friends.">
+    <meta property="og:title" content="Saul's Portfolio">
+    <meta property="og:description" content="I work at BNY as a Data Science Analyst in their rotational program. I graduated with a Data Science degree from Purdue University and I'm currently pursuing my Master's in Computer Science at Georgia Tech.I'm passionate about solving data challenges across the full stack. When I'm not working through code (or fixing my own bugs), you can find me running around NYC or hanging out with family and friends.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="http://localhost:4000/">
+    <meta property="og:image" content="/assets/images/profile-image/saul_pp.png">
 
-    
-    <title>John Doe's Portfolio</title>
-    
-
+    <title>Saul's Portfolio</title>
 </head>
 <body>
     <!-- NAVBAR -->
      <!-- _includes/nav.html -->
 <nav>
     <div class="left">
-        <a href="/">John Doe</a>
+        <a href="/">Saul Means</a>
     </div>
 
     <!-- Desktop Menu -->
@@ -37,25 +40,25 @@
         <a href="/projects/">
             <span>Projects</span>
         </a>
-        <a href="https://drive.google.com/file/d/13Z3duVzh-gguPU5r03oJVEE6rV9rd3DS/view?usp=sharing" target="_blank" rel="noopener noreferrer">
+        <a href="/assets/resume/ErickSaulMeans_Resume.pdf" target="_blank" rel="noopener noreferrer">
             <span>Resume</span>
         </a>
     </div>
 
     <!-- Mobile Menu Button -->
-    <button class="menu-toggle" aria-label="Toggle menu">
+    <button class="menu-toggle" type="button" aria-label="Toggle menu" aria-expanded="false" aria-controls="mobile-nav">
         <i class="fa fa-bars fa-2x"></i>
     </button>
 
     <!-- Mobile Menu -->
-    <div class="mobile-nav">
+    <div class="mobile-nav" id="mobile-nav">
         <a href="/">
             <span>Home</span>
         </a>
         <a href="/projects/">
             <span>Projects</span>
         </a>
-        <a href="https://drive.google.com/file/d/13Z3duVzh-gguPU5r03oJVEE6rV9rd3DS/view?usp=sharing" target="_blank" rel="noopener noreferrer">
+        <a href="/assets/resume/ErickSaulMeans_Resume.pdf" target="_blank" rel="noopener noreferrer">
             <span>Resume</span>
         </a>
     </div>
@@ -67,14 +70,14 @@
     <div class="group">
         <div class="text">
             <h2>
-                I'm John 
+                Hey! I'm Saul 
                 
                 <span class="external-links">
                     
                     
                         
                             
-                            <a href="https://www.linkedin.com/in/aramlee1/" target="_blank">
+                            <a href="https://www.linkedin.com/in/saulm24/" target="_blank">
                                 <i class="fa-brands fa-linkedin"></i>
                             </a>
                         
@@ -85,20 +88,13 @@
                     
                         
                             
-                                <a href="https://github.com/leea2/" target="_blank">
+                                <a href="https://github.com/itsSaul24/" target="_blank">
                                     <i class="fa-brands fa-github"></i>
                                 </a>
                             
                             
                         
                     
-                        
-                            
-                                <a href="https://stackoverflow.com/users/test/" target="_blank">
-                                    <i class="fa-brands fa-stack-overflow"></i>
-                                </a>
-                            
-                            
                         
                     
                         
@@ -117,8 +113,11 @@
                 
             </h2>
             
-            <h3> headline message </h3>
-            <p> Write an awesome intro and discuss your highlights and qualification. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.</p>
+            <h3> New York, New York </h3>
+            <p>I work at BNY as a Data Science Analyst in their rotational program. I graduated with a Data Science degree from Purdue University and I’m currently pursuing my Master’s in Computer Science at Georgia Tech.</p>
+
+<p>I’m passionate about solving data challenges across the full stack. When I’m not working through code (or fixing my own bugs), you can find me running around NYC or hanging out with family and friends.</p>
+
             <div class="links">
                 <a href="#projects">
                     <i class="fa-solid fa-pen"></i>
@@ -136,12 +135,11 @@
             
         </div>
         <div class="headshot">
-            <img src= ./assets/images/profile-image/avatar.jpeg alt="john doe headshot">       
+            <img src="./assets/images/profile-image/saul_pp.png" alt="Saul Means headshot">
         </div>
     </div>
     
 </section>
-
 
 
 
@@ -158,54 +156,59 @@
 
     <div class="grid-container">
         
-    <a href="/projects/demo-project/index/" class="project-link">
+    <a href="/projects/cloudscale_etl/index/" class="project-link">
         <div class="project-card">
             
             
-            <img src="/_projects/demo-project/project2.jpg" alt="Super Heavy Booster Catch (Demo Only) image">
-            <h3 class="project-title">Super Heavy Booster Catch (Demo Only)</h3>
+            
+            <img src="/projects/cloudscale_etl/cs_cover.jpg" alt="CloudScale Finance ETL (In Progress) image">
+            <h3 class="project-title">CloudScale Finance ETL (In Progress)</h3>
             <div class="project-skills">
                 
-                    <span class="skill">Structural analysis</span>
+                    <span class="skill">ETL Development</span>
                 
-                    <span class="skill">Aerodynamic design</span>
+                    <span class="skill">AWS Lambda & S3</span>
                 
-                    <span class="skill">Propulsion system integration</span>
+                    <span class="skill">Google BigQuery</span>
                 
-                    <span class="skill">Control Algorithem</span>
+                    <span class="skill">Apache Airflow</span>
                 
-                    <span class="skill">Welding</span>
+                    <span class="skill">Docker & CI/CD</span>
                 
-                    <span class="skill">Metal forming</span>
+                    <span class="skill">Terraform IaC</span>
                 
-                    <span class="skill">Thermal simulation</span>
+                    <span class="skill">Monitoring & Alerting</span>
                 
             </div>
-            <p class="project-description">(I have never been employed by / affiliated with SpaceX. This is for demo use only) Developing the Super Heavy booster catch project involves designing a robust launch tower with "chopstick" arms, advanced control systems for precise booster alignment, and integrating sophisticated software for real-time trajectory adjustments and structural engineering to handle immense forces.</p>
+            <p class="project-description">A cloud-native ETL pipeline for ingesting, transforming, and analyzing financial market data using AWS, GCP, Docker, and Apache Airflow. This project is currently under active development and serves as a hands-on demonstration of modern data engineering and DevOps practices.</p>
             <button class="read-more">Read more →</button>
         </div>
     </a>
 
-    <a href="/projects/sonos-teardown/sonos/" class="project-link">
+    <a href="/projects/mm_pred/index/" class="project-link">
         <div class="project-card">
             
             
-            <img src="/_projects/sonos-teardownproject-image.webp" alt="Sonos teardown image">
-            <h3 class="project-title">Sonos teardown</h3>
+            
+            <img src="/projects/mm_pred/mm_cover.jpg" alt="March Madness Prediction image">
+            <h3 class="project-title">March Madness Prediction</h3>
             <div class="project-skills">
                 
-                    <span class="skill">drumel</span>
+                    <span class="skill">Exploratory Data Analysis</span>
                 
-                    <span class="skill">microprobing</span>
+                    <span class="skill">Feature Engineering</span>
                 
-                    <span class="skill">Electronics Teardown</span>
+                    <span class="skill">Dimensionality Reduction (PCA)</span>
                 
-                    <span class="skill">PCB analysis</span>
+                    <span class="skill">Classification Modeling</span>
                 
-                    <span class="skill">audio system design</span>
+                    <span class="skill">Model Evaluation & Selection</span>
+                
+                    <span class="skill">Data Visualization</span>
                 
             </div>
-            <p class="project-description">Conducted detailed teardown analysis of Sonos Era speaker, documenting internal components, driver configuration, and PCB design. Created technical documentation with photos and assembly insights for engineering reference.</p>
+            <p class="project-description">A data‑science capstone from my final semester at Purdue University.   We built several classification models (Logistic Regression, SVM, KNN, Random Forest) to predict how many games Purdue would win in the 2024 NCAA Tournament, and evaluated them against both business and data‑science success criteria.
+</p>
             <button class="read-more">Read more →</button>
         </div>
     </a>
@@ -222,40 +225,32 @@
         
           <li>
             <div class="skills-card">
-              <span class="category-label">3D Modeling</span>
+              <span class="category-label">Programming Languages</span>
             
               <ul class="skills-list">
                 
                   <li class="skill">
-                    Onshape
+                    Python
                   </li>
                 
                   <li class="skill">
-                    Solidworks
+                    SQL
                   </li>
                 
                   <li class="skill">
-                    Creo
+                    R
                   </li>
                 
                   <li class="skill">
-                    Fusion 360 (Autodesk)
+                    Git
                   </li>
                 
                   <li class="skill">
-                    Blender (for complex shapes or animations)
+                    Java (Proficient)
                   </li>
                 
                   <li class="skill">
-                    Siemens NX
-                  </li>
-                
-                  <li class="skill">
-                    Inventor (Autodesk)
-                  </li>
-                
-                  <li class="skill">
-                    CATIA (Dassault Systèmes)
+                    JavaScript (Proficient)
                   </li>
                 
                 </ul>
@@ -265,52 +260,44 @@
         
           <li>
             <div class="skills-card">
-              <span class="category-label">Prototyping</span>
+              <span class="category-label">Machine Learning & AI</span>
             
               <ul class="skills-list">
                 
                   <li class="skill">
-                    SLA
+                    AI Agents
                   </li>
                 
                   <li class="skill">
-                    CNC
+                    Large Language Models (LLMs)
                   </li>
                 
                   <li class="skill">
-                    FDM
+                    Prompt Engineering
                   </li>
                 
                   <li class="skill">
-                    SLS
+                    RAG (Retrieval-Augmented Generation)
                   </li>
                 
                   <li class="skill">
-                    DMLS
+                    NLP (Natural Language Processing)
                   </li>
                 
                   <li class="skill">
-                    PolyJet Printing
+                    CNNs (Convolutional Neural Networks)
                   </li>
                 
                   <li class="skill">
-                    Vacuum Casting
+                    GNNs (Graph Neural Networks)
                   </li>
                 
                   <li class="skill">
-                    Laser Cutting
+                    LangChain
                   </li>
                 
                   <li class="skill">
-                    Water Jet Cutting
-                  </li>
-                
-                  <li class="skill">
-                    Arduino / Raspberry Pi
-                  </li>
-                
-                  <li class="skill">
-                    Breadboarding for circuit testing
+                    Vector Databases
                   </li>
                 
                 </ul>
@@ -320,20 +307,24 @@
         
           <li>
             <div class="skills-card">
-              <span class="category-label">Design Standards / Practices</span>
+              <span class="category-label">Data Engineering</span>
             
               <ul class="skills-list">
                 
                   <li class="skill">
-                    GD&T ASME Y14
+                    Oracle
                   </li>
                 
                   <li class="skill">
-                    ISO fits and tolerances
+                    SQL Server
                   </li>
                 
                   <li class="skill">
-                    PLM (PTC Windchill / Arena)
+                    Apache Kafka
+                  </li>
+                
+                  <li class="skill">
+                    Apache Airflow
                   </li>
                 
                 </ul>
@@ -343,24 +334,32 @@
         
           <li>
             <div class="skills-card">
-              <span class="category-label">PCB Design</span>
+              <span class="category-label">Cloud & MLOps</span>
             
               <ul class="skills-list">
                 
                   <li class="skill">
-                    Altium Designer
+                    GCP BigQuery / Cloud Storage
                   </li>
                 
                   <li class="skill">
-                    Altium
+                    AWS Lambda / S3
                   </li>
                 
                   <li class="skill">
-                    Eagle
+                    Docker
                   </li>
                 
                   <li class="skill">
-                    KiCad
+                    CI/CD Pipelines
+                  </li>
+                
+                  <li class="skill">
+                    Microservices Architecture
+                  </li>
+                
+                  <li class="skill">
+                    RESTful APIs
                   </li>
                 
                 </ul>
@@ -370,24 +369,51 @@
         
           <li>
             <div class="skills-card">
-              <span class="category-label">Problem Solving / Risk Management</span>
+              <span class="category-label">Data Visualization & Analytics</span>
             
               <ul class="skills-list">
                 
                   <li class="skill">
-                    Root Cause Analysis (e.g., 5 Whys, Fishbone Diagram)
+                    Tableau
                   </li>
                 
                   <li class="skill">
-                    DFMEA / PFMEA
+                    Power BI
                   </li>
                 
                   <li class="skill">
-                    Six Sigma methodologies
+                    Streamlit
+                  </li>
+                
+                </ul>
+            </div>
+            
+          </li> 
+        
+          <li>
+            <div class="skills-card">
+              <span class="category-label">Business & Project Development</span>
+            
+              <ul class="skills-list">
+                
+                  <li class="skill">
+                    SAP
                   </li>
                 
                   <li class="skill">
-                    Shain Red-X
+                    ServiceNow
+                  </li>
+                
+                  <li class="skill">
+                    Stakeholder Management
+                  </li>
+                
+                  <li class="skill">
+                    Executive Presentations
+                  </li>
+                
+                  <li class="skill">
+                    SDLC Management
                   </li>
                 
                 </ul>
@@ -404,7 +430,7 @@
 
     <div class="group">
       
-        <form action="https://formspree.io/f/https://formspree.io/f/{8-digit key}" method="POST">
+        <form action="https://formspree.io/f/xeozgvne" method="POST">
             <label for="name">Name</label>
             <input type="text" id="name">
 
@@ -420,10 +446,7 @@
   </section>
 </div>
 
-     
-</body>
-
-    <footer>
+     <footer>
     <div class="footer-content">
         <div class="links">
             <a href="/">
@@ -432,14 +455,17 @@
             <a href="/projects/">
                 <span>Projects</span>
             </a>
-            <a href=https://drive.google.com/file/d/13Z3duVzh-gguPU5r03oJVEE6rV9rd3DS/view?usp=sharing target="_blank" rel="noopener noreferrer">
+            <a href="/assets/resume/ErickSaulMeans_Resume.pdf" target="_blank" rel="noopener noreferrer">
                 <span>Resume</span>
             </a>
         </div>
     </div>
     <div class="license">
-        <span>For any question or suggestion for the portfolio template or projects, reach out <a class="help" href="https://createdotshow.com"> Here</a> </span>
-        <p>FreeToEngineer portfolio template © 2025 by Aram Lee is licensed under <a href="https://creativecommons.org/licenses/by/4.0/?ref=chooser-v1">CC BY 4.0</a></p>
+        <p>FreeToEngineer portfolio template 2025 by Aram Lee is licensed under <a href="https://creativecommons.org/licenses/by/4.0/?ref=chooser-v1">CC BY 4.0</a></p>
     </div>
 </footer>
+
+
+     <script defer src="/assets/js/script.js"></script>
+</body>
 </html>

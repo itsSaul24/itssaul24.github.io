@@ -8,7 +8,7 @@ skills:
   - Structural analysis
   - Aerodynamic design
   - Propulsion system integration
-  - Control Algorithem 
+  - Control Algorithm 
   - Welding
   - Metal forming
   - Thermal simulation
@@ -31,7 +31,7 @@ Use this to have subsection if needed
 <span style="font-size: 10px">"Starship Test Flight Mission" from https://www.flickr.com/photos/spacex/52821641477/</span>  
 You can put in multiple entries. All images will be at a fixed height in the same row. With smaller window, they will switch to columns.  
 
-### Embeed images
+### Embed images
 {% include image-gallery.html images="project2.jpg" height="400" %} 
 place the images in project folder/images then update the file path.   
 
@@ -49,7 +49,7 @@ The width of the video below. Regardless of initial width, all the videos is res
 
 <br>
 
-## Adding a hozontal line
+## Adding a horizontal line
 ---
 
 ## Starting a new line
@@ -110,6 +110,4 @@ console.log(x);
 | Row 1, Col 1 | Row 1, Col 2 |
 | Row 2, Col 1 | Row 2, Col 2 |
 
-make sure to leave aline betwen the table and the header
-
-
+Make sure to leave a line between the table and the header

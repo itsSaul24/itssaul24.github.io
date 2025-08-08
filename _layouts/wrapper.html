@@ -13,13 +13,16 @@
 
     <link rel="stylesheet" href="/css/styles.css">
     <link rel="stylesheet" href="/css/syntax.css">
+    <link rel="icon" type="image/png" href="/assets/images/favicon.png">
 
-    <script src="{{ '/assets/js/script.js' | relative_url }}"></script>
+    <meta name="description" content="{{ site.description | strip_html | strip_newlines }}">
+    <meta property="og:title" content="{{ page.title | default: site.title }}">
+    <meta property="og:description" content="{{ site.description | strip_html | strip_newlines }}">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="{{ site.url }}{{ page.url }}">
+    <meta property="og:image" content="{{ site.profile_image | relative_url }}">
 
-    
     <title>{{ site.title }}</title>
-    
-
 </head>
 <body>
     <!-- NAVBAR -->
@@ -27,8 +30,8 @@
 
      <div class="page">{{content}}</div>
 
-     
-</body>
+     {% include footer.html%}
 
-    {% include footer.html%}
+     <script defer src="{{ '/assets/js/script.js' | relative_url }}"></script>
+</body>
 </html>

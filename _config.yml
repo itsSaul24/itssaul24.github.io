@@ -34,7 +34,7 @@ external-links:    # input only your own url slug. The icons with missing entrie
   linkedin: saulm24    # https://www.linkedin.com/in/saulm24
   github: itsSaul24    # https://github.com/itsSaul24
   medium:            # https://medium.com/@{your url slug} 
-  instragram:       # https://instagram.com/{your url slug} 
+  instagram:       # https://instagram.com/{your url slug} 
   youtube:           # https://youtube.com/@{your url slug} 
   discord:            # https://discord.com/users/{your url slug} 
   
@@ -55,10 +55,10 @@ skills:
     - Large Language Models (LLMs)
     - Prompt Engineering
     - RAG (Retrieval-Augmented Generation)
-    - NLP (Natural Language Processing
+    - NLP (Natural Language Processing)
     - CNNs (Convolutional Neural Networks)
     - GNNs (Graph Neural Networks)
-    - Langchain
+    - LangChain
     - Vector Databases
   - category: Data Engineering 
     tools:
@@ -68,7 +68,7 @@ skills:
     - Apache Airflow
   - category: Cloud & MLOps
     tools:
-    - GCP Big Query / Cloud Storage
+    - GCP BigQuery / Cloud Storage
     - AWS Lambda / S3
     - Docker
     - CI/CD Pipelines

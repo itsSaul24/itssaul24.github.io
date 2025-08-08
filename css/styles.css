@@ -97,7 +97,7 @@ nav .right a:last-child
 nav .right a:last-child:hover,
 nav .right a span:last-child:hover,
 nav .mobile-nav a:last-child:hover,
-nav .mobile-nav a span:last-child:hover,{
+nav .mobile-nav a span:last-child:hover {
     color: var(--text-color);
     background-color: var(--light-background-color);
     border-radius: 10px;
@@ -142,6 +142,10 @@ nav .hamburger::after {
 
 nav .mobile-nav {
     display: none;
+}
+
+nav .mobile-nav.active {
+    display: block;
 }
 
 
@@ -227,7 +231,8 @@ nav .mobile-nav {
 }
 
 .hero-section .headshot img {
-    width: 400px;
+    width: min(400px, 60vw);
+    max-width: 100%;
     aspect-ratio: 1/1;
     object-fit: cover;
     border-radius: 50%;
@@ -353,7 +358,7 @@ nav .mobile-nav {
 .project-card .project-description {
     display: -webkit-box;
     -webkit-line-clamp: 4; 
-    line-clamp: 4px;
+    line-clamp: 4;
     -webkit-box-orient: vertical;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -774,7 +779,7 @@ footer p {
 
 @media (max-width: 768px) {
     /* NEVBAR*/
-    .desktop-nav {
+    nav .desktop-nav {
         display: none;
     }
 
@@ -946,4 +951,3 @@ footer p {
 
       
 }
-
