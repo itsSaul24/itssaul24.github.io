@@ -4,10 +4,10 @@ title: March Madness Prediction
 published: true
 order: 1
 description: >
-  A data‑science capstone from my final semester at Purdue University.  
-  We built several classification models (Logistic Regression, SVM, KNN, Random Forest)
-  to predict how many games Purdue would win in the 2024 NCAA Tournament, and evaluated
-  them against both business and data‑science success criteria.
+  A data science capstone project from my final semester at Purdue University.
+  We built and compared multiple classification models (Logistic Regression, SVM, KNN, Random Forest)
+  to predict Purdue's performance in the 2024 NCAA Tournament, evaluating them against both
+  business objectives and traditional data science metrics.
 skills:
   - Exploratory Data Analysis
   - Feature Engineering
@@ -18,10 +18,11 @@ skills:
 main-image: /mm_cover.jpg
 ---
 
-## 📖 Introduction
+## 📖 Overview
 
-In this project, we explore historical NCAA data to predict Purdue’s 2024 Tournament performance.  
-We walk through data preprocessing, dimensionality reduction, model training, and final probability outputs.
+This capstone project leverages historical NCAA tournament data to predict Purdue's performance in March Madness 2024. Our approach combines rigorous data preprocessing, dimensionality reduction techniques, and multiple classification algorithms to generate actionable insights.
+
+**Key Question:** How many games will Purdue win in the 2024 NCAA Tournament?
 
 ---
 
@@ -35,39 +36,46 @@ marchmadness-prediction/
 └── slides/         # Presentation decks
 ``` 
 
-## 🔍 Data Overview
-We split our data into:
-- training_data.csv: used to train models
-- val_data.csv: validation set for hyperparameter tuning
-- final_predictions.csv: hold-out set predictions
-- misc_data/: auxiliary datasets used in feature engineering
+## 🔍 Dataset & Methodology
 
-## 📊 2D & 3D PCA Visualizations
-Dimensionality reduction helps us inspect variance structure and clustering by team metrics.
+Our analysis uses a carefully structured dataset split:
 
-2D PCA
+* **Training Set** (`training_data.csv`): Historical tournament data for model training
+* **Validation Set** (`val_data.csv`): Used for hyperparameter tuning and model selection
+* **Test Set** (`final_predictions.csv`): Hold-out predictions for final evaluation
+* **Auxiliary Data** (`misc_data/`): Additional team statistics for feature engineering
+
+We engineered features from team performance metrics, efficiency ratings, and historical tournament outcomes to create a comprehensive predictive framework.
+
+## 📊 Exploratory Analysis: PCA Visualizations
+
+To understand the underlying structure in our high-dimensional feature space, we applied Principal Component Analysis (PCA). These visualizations reveal how teams cluster based on their performance characteristics.
+
+### 2D Principal Component Analysis
 {% include image-gallery.html images="mm_2d_pca.png" height="400" %} 
-<span style="font-size: 12px">2D PCA of team performance features</span>
+*2D projection showing team clustering patterns in the feature space*
 
-3D PCA
+### 3D Principal Component Analysis
 {% include image-gallery.html images="mm_3d_pca.png" height="400" %} 
-<span style="font-size: 12px">3D PCA of team performance features</span>
+*3D visualization revealing additional variance structure in team performance metrics*
 
-## 🌟 Top 10 Feature Importances (Random Forest)
-We trained a Random Forest classifier and extracted the top 10 most influential features.
+## 🌟 Feature Importance Analysis
+
+Using Random Forest's built-in feature importance scoring, we identified the most predictive variables for tournament success. This analysis helps validate our domain knowledge and guides future feature engineering efforts.
 
 {% include image-gallery.html images="mm_feature_importance.png" height="400" %} 
-<span style="font-size: 12px">Random Forest top 10 feature importances</span>
+*Top 10 most influential features according to Random Forest classifier*
 
-## 🏀 Predicted Win Probabilities
-Finally, we generate predicted probabilities for each team in the hold-out tournament bracket.
+## 🏀 Model Predictions
+
+Our final models generate win probabilities for each team in the tournament bracket. These probabilities reflect each team's likelihood of advancing through successive rounds based on their historical performance patterns.
 
 {% include image-gallery.html images="mm_pred.png" height="800" %} 
-<span style="font-size: 12px">Predicted win probability for each team</span>
+*Tournament bracket with predicted win probabilities for all participating teams*
 
-## 📈 Performance Summary
+## 📈 Model Performance Comparison
 
-Across both the initial and fine‑tuned parameter sets, Logistic Regression consistently led in overall classification metrics, while Random Forest was the only model to nail Purdue’s actual tournament outcome exactly.
+We evaluated four classification algorithms using both initial parameters and hyperparameter-tuned versions. Logistic Regression achieved the highest overall accuracy, while Random Forest uniquely predicted Purdue's exact tournament outcome.
 
 | Model                   | Initial Accuracy | Tuned Accuracy |
 |-------------------------|:----------------:|:--------------:|
@@ -76,47 +84,52 @@ Across both the initial and fine‑tuned parameter sets, Logistic Regression con
 | KNN                     | 0.4300           | 0.4839         |
 | Random Forest           | 0.4146           | 0.4390         |  
 
-*(Weighted macro‑average across accuracy, precision, recall, F1)* 
+*Weighted macro-average across accuracy, precision, recall, and F1-score*
 
 ---
 
-## ⚖️ Predicted vs. Actual Purdue Performance
+## ⚖️ Business Objective: Purdue Performance Prediction
+
+Our primary business goal was to accurately predict Purdue's tournament run. Here's how each model performed against the actual outcome:
 
 | Model                   | Predicted Round       | Implied # Wins | Actual Round          | Actual # Wins |
 |-------------------------|:---------------------:|:--------------:|:---------------------:|:-------------:|
-| Logistic Regression     | Final Four (Semis)    | 4              | Championship (Final)  | 5             |
-| SVM                     | Final Four (Semis)    | 4              | Championship (Final)  | 5             |
-| KNN                     | Final Four (Semis)    | 4              | Championship (Final)  | 5             |
-| **Random Forest**       | Championship Runner‑up| 5              | Championship (Final)  | 5             |
+| Logistic Regression     | Final Four (Semis)    | 4              | Championship (Final)  | 5             |
+| SVM                     | Final Four (Semis)    | 4              | Championship (Final)  | 5             |
+| KNN                     | Final Four (Semis)    | 4              | Championship (Final)  | 5             |
+| **Random Forest**       | Championship Runner-up| 5              | Championship (Final)  | 5             |
 
-- Logistic, SVM, and KNN each fell one round short of Purdue’s actual runner‑up finish (Semis vs. Final) 
-- Random Forest uniquely matched the true outcome, correctly predicting Purdue’s path to the championship game
+**Key Insights:**
+* Logistic Regression, SVM, and KNN predicted Purdue would reach the Final Four (4 wins)
+* Random Forest correctly predicted Purdue's championship game appearance (5 wins)
+* All models met our "within 1-round error" business criterion
 
 ---
 
 ## 🎯 Key Takeaways
 
 1. **Business Success:**  
-   All models met the “within 1‑round error” criterion, satisfying our primary objective
+   All models achieved our primary business objective of predicting Purdue's performance within one round
 
-2. **Metric Trade‑Offs:**  
-   Despite Random Forest’s perfect bracket prediction for Purdue, its overall accuracy (0.439) lagged behind simpler models—underscoring that the highest aggregate score doesn’t always align with specific business goals.  
+2. **Metric Trade-offs:**  
+   Random Forest achieved perfect accuracy for our specific business case (Purdue's run) despite having lower overall tournament accuracy (0.439), highlighting the importance of aligning model selection with business objectives
 
 3. **Feature Insights:**  
-   Across models, seed and efficiency differentials (AdjEM, AdjDE) consistently ranked among the top predictors, reaffirming their domain importance.
+   Tournament seeding and efficiency metrics (AdjEM, AdjDE) emerged as the most predictive features across all models, validating established basketball analytics principles
 
 ---
 
-## 🔮 Next Steps
+## 🔮 Future Enhancements
 
-- **Ensemble Stacking:** Blend Logistic Regression, SVM, and RF via a meta‑learner to leverage both high‑accuracy and bracket‑precision signals.  
-- **Probability Calibration:** Apply Platt scaling or isotonic regression to improve alignment between predicted probabilities and observed frequencies.  
-- **Game‑by‑Game Modeling:** Explore a sequential model that predicts each matchup individually—potentially boosting overall tournament‑level accuracy.  
-- **Live Updating:** Integrate in‑season and in‑tournament feeds (injuries, momentum metrics) to dynamically adjust win probabilities round‑by‑round.
+* **Ensemble Methods:** Combine models using stacking or blending to leverage both high overall accuracy and business-specific precision
+* **Probability Calibration:** Apply Platt scaling or isotonic regression to better align predicted probabilities with observed outcomes
+* **Sequential Modeling:** Develop game-by-game prediction models that account for matchup-specific factors
+* **Real-time Integration:** Incorporate live data feeds (injuries, momentum, betting lines) for dynamic probability updates throughout the tournament
 
-## 🔗 GitHub
+## 🔗 Source Code
+ 
+Explore the complete codebase, including data preprocessing, model training, and evaluation scripts:
 
-You can explore the source code here:  
-👉 [View on GitHub](https://github.com/itsSaul24/marchmadness-prediction)
+**[📂 View Project on GitHub](https://github.com/itsSaul24/marchmadness-prediction)**
 
 ---
