@@ -3,7 +3,12 @@
     <h2>Projects</h2>
 
     <div class="grid-container">
-        {% for item in site.projects %}
+        {% comment %} Sort published projects by 'order' first, then those without 'order' {% endcomment %}
+        {% assign visible_projects = site.projects | where_exp: "p", "p.published != false" %}
+        {% assign with_order = visible_projects | where_exp: "p", "p.order" | sort: "order" %}
+        {% assign without_order = visible_projects | where_exp: "p", "p.order == nil" %}
+        {% assign sorted_projects = with_order | concat: without_order %}
+        {% for item in sorted_projects %}
     <a href="{{ item.url }}" class="project-link">
         <div class="project-card">
             {% assign main = item['main-image'] | default: '' | remove_first: '/' %}

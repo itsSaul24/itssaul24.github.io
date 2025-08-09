@@ -2,7 +2,7 @@
 layout: post
 title: AI Running Agent
 published: true
-order: 0
+order: 1
 description:
   A serverless AI-powered running coach that generates a personalized two‑month rolling training plan, adapts weekly based on performance and feedback, and answers training questions in real-time. Built on modern web + AI patterns with cost-aware rate management.
 skills:

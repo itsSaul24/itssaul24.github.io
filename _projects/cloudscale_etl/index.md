@@ -2,6 +2,7 @@
 layout: post
 title: CloudScale Finance ETL (In Progress)
 published: true
+order: 2
 description:
   A cloud-native ETL pipeline for ingesting, transforming, and analyzing financial market data using AWS, GCP, Docker, and Apache Airflow. This project is currently under active development and serves as a hands-on demonstration of modern data engineering and DevOps practices.
 skills:
@@ -30,21 +31,11 @@ This project is currently under development. Once complete, it will showcase:
 
 I designed CloudScale ETL as a structured way to upskill in modern data engineering. It’s an educational, portfolio-focused project intended to reinforce the fundamentals:
 
-- Build a working end-to-end pipeline with clear, junior-to-mid level code
+- Build a working end-to-end pipeline with clear code
 - Practice cloud-native patterns (serverless, IaC, monitoring) without over-engineering
 - Document architecture and tradeoffs so others can learn from my approach
 
 This is not a production workload—it's a teaching vehicle and a skills benchmark that I’m iterating on publicly.
-
-## 🔄 Work-in-Progress & How to Follow
-
-- Active WIP with incremental commits and checkpoints
-- Full implementation plan and architecture notes live in my context docs
-- I welcome feedback, issues, and suggestions
-
-Links:
-- GitHub (WIP, public): https://github.com/itsSaul24/cloudscale-finance-etl
-- Project Plan & Notes: /llm_context/cloudscale-etl-plan.md
 
 ## 📊 Architecture Overview (Preview)
 

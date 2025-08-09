@@ -155,7 +155,9 @@ collections:
   projects:
     output: true
     permalink: /projects/:path/
-
+  posts:
+    output: true
+    permalink: /blog/:path/
 
 markdown: kramdown
 highlighter: rouge

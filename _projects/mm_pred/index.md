@@ -2,7 +2,7 @@
 layout: post
 title: March Madness Prediction
 published: true
-order: 1
+order: 0
 description: >
   A data science capstone project from my final semester at Purdue University.
   We built and compared multiple classification models (Logistic Regression, SVM, KNN, Random Forest)
