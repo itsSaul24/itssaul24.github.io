@@ -1,54 +1,68 @@
 ---
 layout: post
-title: "Welcome to My Blog - Coming Soon!"
-date: 2025-08-08
-published: false
+title: "My First OMSCS Project - Man in the Middle"
+date: 2025-08-27
+published: true
 author: Saul Means
-tags: [announcement, personal, data-science]
-read_time: 2
-image: /assets/images/blog/blog-coming-soon/cover.jpg
-excerpt: "Exciting things are coming to this space! I'm launching my blog to share insights about data science, technology, and my journey in the field."
+tags: [omscs, cybersecurity, networking, cryptography, learning]
+read_time: 5
+excerpt: "Diving into my first OMSCS project in Intro to Information Security. Eight hours of network forensics, cryptography, and learning why preparation matters."
 ---
 
-# Welcome to My Blog!
+# My First OMSCS Project - Man in the Middle
 
-I'm excited to announce that I'm launching my personal blog! This space will be where I share my thoughts, insights, and experiences as I navigate the world of data science and technology.
+I just finished my first project in the OMSCS program. CS6035 (Intro to Information Security) threw me straight into network forensics, and honestly, it was way more fun than I expected.
 
-## What to Expect
+## The Setup
 
-In the coming weeks and months, you can look forward to content covering:
+The project was about catching hackers by analyzing a pcap file. Think digital detective work - sifting through network traffic to find clues and piece together what happened.
 
-### 🔬 **Data Science & Analytics**
-- Deep dives into interesting datasets and analyses
-- Tutorials on machine learning techniques
-- Best practices for data visualization
-- Real-world applications from my work at BNY
+I spent 8-10 hours total on this. But here's the thing - I was nervous about my first OMSCS project, so I spent a few days beforehand reviewing TCP, DNS, and IRC concepts. I'd never touched networking before, and this prep work saved me.
 
-### 💻 **Technology & Development**
-- Code snippets and technical tutorials
-- Reviews of tools and frameworks
-- Architecture discussions and design patterns
-- Open source project highlights
+## What I Learned
 
-### 🏃‍♂️ **Personal Journey**
-- Lessons learned from my rotational program at BNY
-- Insights from pursuing my Master's at Georgia Tech
-- Balancing work, education, and running in NYC
-- Career advice and reflections
+### Network Fundamentals
 
-### 🚀 **Project Spotlights**
-- Behind-the-scenes looks at my projects
-- Technical challenges and solutions
-- Updates on ongoing work like RunGPT and CloudScale ETL
+Before this project, networking was a black box to me. Now I understand:
 
-## Stay Tuned
+**TCP/DNS/IRC basics** - These protocols power most internet communication. TCP handles reliable data transfer, DNS translates domain names to IP addresses, and IRC manages chat communications.
 
-I'm currently working on several exciting posts that I can't wait to share with you. Whether you're a fellow data scientist, a student just starting out, or someone curious about the field, I hope you'll find something valuable here.
+**Direct Client Connections (DCCs)** - A way for IRC users to bypass the server and connect directly. This became important for finding hidden communications in the traffic.
 
-In the meantime, feel free to check out my [projects](/projects/) or connect with me on [LinkedIn](https://linkedin.com/in/saulm24) and [GitHub](https://github.com/itsSaul24).
+**IP address formats** - Addresses aren't always in the familiar dotted notation. Sometimes they're stored as numeric values that need calculation to decode.
 
-Thanks for stopping by, and see you soon!
+**Wireshark for packet analysis** - This GUI tool (built on TShark) lets you filter and examine network traffic. Learning to navigate thousands of packets and find the relevant ones was like learning a new language.
 
----
+### Cryptography in Practice
 
-*P.S. - If you have any topics you'd like me to write about, don't hesitate to reach out!*
+The project had multiple layers of encryption. Tools like CyberChef became essential for decrypting messages and files. 
+
+What surprised me was how much detective work goes into cryptography. Different encryption algorithms leave hints about what they are - key lengths, character patterns, file headers. It's not just about knowing the math.
+
+### Password Cracking with John the Ripper
+
+I used John the Ripper for the first time. It's a brute-force password cracking tool that systematically tries different combinations until it finds a match.
+
+The power felt almost unsettling. Watching it churn through thousands of password attempts per second made me think differently about password security. Strong passwords aren't just good practice - they're necessary.
+
+## The Fun Parts
+
+Some flags were tricky and demanded creative thinking. The project encouraged hands-on problem solving instead of memorization. I wish more classes followed this format.
+
+Finding hidden messages in network traffic felt like solving puzzles. Each discovery led to the next piece of the investigation.
+
+## Extra Credit - KQL Adventures
+
+The extra credit involved using Kusto Query Language (KQL) to analyze network flow logs. 
+
+KQL is compact compared to SQL. Operations like group-by take fewer lines of code. But switching between the two languages hurt my brain initially - I'm so used to SQL from work.
+
+Still, KQL seems powerful for telemetry data analysis. It has built-in functions for time-series data that would require custom code in SQL.
+
+## Reflection
+
+I truly LOVED this project, it's technical but also creative. You're not just developing algorithms - you're solving mysteries.
+
+The preparation paid off. Reviewing networking basics beforehand let me focus on the actual investigation instead of learning protocols while under pressure.
+
+Eight hours well spent. Looking forward to the next one.

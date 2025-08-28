@@ -22,16 +22,6 @@ permalink: /blog/
             {% for post in sorted_posts %}
                 <article class="blog-card">
                     <a href="{{ post.url | relative_url }}" class="blog-link">
-                        {% if post.image %}
-                            <div class="blog-image">
-                                <img src="{{ post.image | relative_url }}" alt="{{ post.title }}">
-                            </div>
-                        {% else %}
-                            <div class="blog-image blog-placeholder">
-                                <i class="fa-solid fa-pen-to-square"></i>
-                            </div>
-                        {% endif %}
-                        
                         <div class="blog-content">
                             <h2 class="blog-title">{{ post.title }}</h2>
                             
@@ -40,7 +30,7 @@ permalink: /blog/
                                     <i class="fa-regular fa-calendar"></i>
                                     {{ post.date | date: "%B %d, %Y" }}
                                 </span>
-                                {% if post.read_time %}
+                                {%if post.read_time %}
                                     <span class="blog-read-time">
                                         <i class="fa-regular fa-clock"></i>
                                         {{ post.read_time }} min read

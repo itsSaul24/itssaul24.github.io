@@ -1,4 +1,60 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.10.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2025-08-08T23:59:32-04:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Saul’s Portfolio</title><subtitle>I work at BNY as a Data Science Analyst in their rotational program. I graduated with a Data Science degree from Purdue University and I&apos;m currently pursuing my Master&apos;s in Computer Science at Georgia Tech.
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.10.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2025-08-27T21:00:45-04:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Saul’s Portfolio</title><subtitle>I work at BNY as a Data Science Analyst in their rotational program. I graduated with a Data Science degree from Purdue University and I&apos;m currently pursuing my Master&apos;s in Computer Science at Georgia Tech.
 
 I&apos;m passionate about solving data challenges across the full stack. When I&apos;m not working through code (or fixing my own bugs), you can find me running around NYC or hanging out with family and friends.
-</subtitle></feed>
+</subtitle><entry><title type="html">My First OMSCS Project - Man in the Middle</title><link href="http://localhost:4000/blog/2025-08-08-blog-coming-soon/" rel="alternate" type="text/html" title="My First OMSCS Project - Man in the Middle" /><published>2025-08-27T00:00:00-04:00</published><updated>2025-08-27T00:00:00-04:00</updated><id>http://localhost:4000/blog/blog-coming-soon</id><content type="html" xml:base="http://localhost:4000/blog/2025-08-08-blog-coming-soon/"><![CDATA[<h1 id="my-first-omscs-project---man-in-the-middle">My First OMSCS Project - Man in the Middle</h1>
+
+<p>I just finished my first project in the OMSCS program. CS6035 (Intro to Information Security) threw me straight into network forensics, and honestly, it was way more fun than I expected.</p>
+
+<h2 id="the-setup">The Setup</h2>
+
+<p>The project was about catching hackers by analyzing a pcap file. Think digital detective work - sifting through network traffic to find clues and piece together what happened.</p>
+
+<p>I spent 8-10 hours total on this. But here’s the thing - I was nervous about my first OMSCS project, so I spent a few days beforehand reviewing TCP, DNS, and IRC concepts. I’d never touched networking before, and this prep work saved me.</p>
+
+<h2 id="what-i-learned">What I Learned</h2>
+
+<h3 id="network-fundamentals">Network Fundamentals</h3>
+
+<p>Before this project, networking was a black box to me. Now I understand:</p>
+
+<p><strong>TCP/DNS/IRC basics</strong> - These protocols power most internet communication. TCP handles reliable data transfer, DNS translates domain names to IP addresses, and IRC manages chat communications.</p>
+
+<p><strong>Direct Client Connections (DCCs)</strong> - A way for IRC users to bypass the server and connect directly. This became important for finding hidden communications in the traffic.</p>
+
+<p><strong>IP address formats</strong> - Addresses aren’t always in the familiar dotted notation. Sometimes they’re stored as numeric values that need calculation to decode.</p>
+
+<p><strong>Wireshark for packet analysis</strong> - This GUI tool (built on TShark) lets you filter and examine network traffic. Learning to navigate thousands of packets and find the relevant ones was like learning a new language.</p>
+
+<h3 id="cryptography-in-practice">Cryptography in Practice</h3>
+
+<p>The project had multiple layers of encryption. Tools like CyberChef became essential for decrypting messages and files.</p>
+
+<p>What surprised me was how much detective work goes into cryptography. Different encryption algorithms leave hints about what they are - key lengths, character patterns, file headers. It’s not just about knowing the math.</p>
+
+<h3 id="password-cracking-with-john-the-ripper">Password Cracking with John the Ripper</h3>
+
+<p>I used John the Ripper for the first time. It’s a brute-force password cracking tool that systematically tries different combinations until it finds a match.</p>
+
+<p>The power felt almost unsettling. Watching it churn through thousands of password attempts per second made me think differently about password security. Strong passwords aren’t just good practice - they’re necessary.</p>
+
+<h2 id="the-fun-parts">The Fun Parts</h2>
+
+<p>Some flags were tricky and demanded creative thinking. The project encouraged hands-on problem solving instead of memorization. I wish more classes followed this format.</p>
+
+<p>Finding hidden messages in network traffic felt like solving puzzles. Each discovery led to the next piece of the investigation.</p>
+
+<h2 id="extra-credit---kql-adventures">Extra Credit - KQL Adventures</h2>
+
+<p>The extra credit involved using Kusto Query Language (KQL) to analyze network flow logs.</p>
+
+<p>KQL is compact compared to SQL. Operations like group-by take fewer lines of code. But switching between the two languages hurt my brain initially - I’m so used to SQL from work.</p>
+
+<p>Still, KQL seems powerful for telemetry data analysis. It has built-in functions for time-series data that would require custom code in SQL.</p>
+
+<h2 id="reflection">Reflection</h2>
+
+<p>I truly LOVED this project, it’s technical but also creative. You’re not just developing algorithms - you’re solving mysteries.</p>
+
+<p>The preparation paid off. Reviewing networking basics beforehand let me focus on the actual investigation instead of learning protocols while under pressure.</p>
+
+<p>Eight hours well spent. Looking forward to the next one.</p>]]></content><author><name>Saul Means</name></author><category term="omscs" /><category term="cybersecurity" /><category term="networking" /><category term="cryptography" /><category term="learning" /><summary type="html"><![CDATA[Diving into my first OMSCS project in Intro to Information Security. Eight hours of network forensics, cryptography, and learning why preparation matters.]]></summary></entry></feed>
